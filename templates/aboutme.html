@@ -5,13 +5,13 @@
 
     <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/app.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/devpost.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 <body>
+    <img id="bg" src="{{ url_for('static', filename='img/bg.jpg') }}">
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -38,7 +38,7 @@
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Personal Projects <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="themes">
-                <li><a href="../astudioclones"><strong>Android Studio Clones</strong></a></li>
+                <li><a href="../astudioclones">Android Studio Clones</a></li>
                 <li><a href="../session">Session</a></li>
                 <li><a href="../openweather">Openweather</a></li>
                 <li><a href="../stardetect">Stardetect</a></li>
@@ -48,7 +48,7 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-          <li><a href="../aboutme">About Me</a></li>
+          <li><a href="../aboutme"><strong>About Me</strong></a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
           <li><a href="../contact">Contact</a></li>
@@ -56,37 +56,5 @@
         </div>
       </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <div class="container">
-      <h1 id="title">Android Studio Journey</h1>
-      <hr>
-      <p id="description">Taking it upon myself to learn Android Studio, I learnt to make clones of a few popular tools out there.</p>
-      <p id="description">The projects all mimicked the core functionality of each tool in its specific unique way.</p>
-      <p id="description">In all instances where a backend server with database was required, I leveraged the use of <a href="http://parseplatform.org/">ParseDB</a> on a machine hosted through <a href="https://aws.amazon.com/">Amazon Web Services</a>.</p>
-      <br>
-      <ul id="gameplaylist">
-        <li><a href="https://github.com/ErrAza/instagramclone">Instagram Clone</a></li>
-        <li><a href="https://github.com/ErrAza/whatsappclone">Whatsapp Clone</a></li>
-        <li><a href="https://github.com/ErrAza/twitterclone">Twitter Clone</a></li>
-        <li><a href="https://github.com/ErrAza/uberclone">Uber Clone</a></li>
-        <li><a href="https://github.com/ErrAza/flappybirdclone">Flappy Bird Clone</a> made with <a href="https://libgdx.badlogicgames.com/">LibGDX</a></li>
-      </ul>
-      <br>
-      <p id="description">Looking at existing tools and mimicking them helps develop skills immensely, and it is a task that I will continue to perform.</p>
-      <hr>
-      <div class="techicons">
-        <img src="{{ url_for('static', filename='img/generic/javaicon.png') }}">
-        <img src="{{ url_for('static', filename='img/generic/androidstudioicon.png') }}">
-        <img src="{{ url_for('static', filename='img/generic/androidicon.png') }}">
-        <img src="{{ url_for('static', filename='img/generic/linuxicon.png') }}">
-        <img src="{{ url_for('static', filename='img/generic/githubicon.png') }}">
-      </div>
-      <hr>
-    </div>
-    <br>
-    <br>
-    <br>
 </body>
 </html>
