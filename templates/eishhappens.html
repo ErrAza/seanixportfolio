@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sean McCann</title>
+
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/app.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/devpost.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">Sean McCann</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Professional Development <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="../barblitz">Bar Blitz</a></li>
+                <li><a href="../eishhappens"><strong>Eish Happens</strong></a></li>
+                <li><a href="../mvar">Moneyversity AR</a></li>
+                <li><a href="../sidehustle">Side Hustle</a></li>
+                <li><a href="../superanimals">Super Animals</a></li>
+                <li><a href="../swipa">Swipa</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Personal Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="../astudioclones">Android Studio Clones</a></li>
+                <li><a href="../session">Session</a></li>
+                <li><a href="../openweather">Openweather</a></li>
+                <li><a href="../stardetect">Stardetect</a></li>
+                <li><a href="../permissiongranter">Android Permissions Plugin for Unity</a></li>
+                <li><a href="../seanix">Seanix</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <h1 id="title">Eish Happens</h1>
+      <hr>
+      <p id="description">Enjoy facing those hilarious everyday dangers and turning them into safe activities. </p>
+      <p id="description">From cleaning windscreens to chasing off monkeys - simply swipe, drag or tap your way to a safe environment. </p>
+      <ul id="gameplaylist">
+        <li>Complete a level to move on to the next.</li>
+        <li>The game gets faster the further you go.</li>
+        <li>Get onto the leaderboard and compete against your friends.</li>
+        <li>Use your mouse or fingers to swipe, tap, drag as required.</li>
+        <li>Windscreen wipers not working? Clear the windscreen to avoid an accident.</li>
+        <li>Carrying wads of cash? Tap to transact electronically and avoid losing your cash.</li>
+        <li>Carrying lots of valuables? Drag them to a safe place to prevent the monkeys from stealing them.</li>
+        <li>Driving with your possessions in full view? Store them away so the Mynah birds don’t take them.</li>
+        <li>Need to cross a busy road? Make sure you’re visible so the cars will stop.</li>
+      </ul>
+      <br>
+      <br>
+      <img id="splash" src="{{ url_for('static', filename='img/eishhappens/splash.png') }}">
+      <hr>
+      <div class="techicons">
+        <img src="{{ url_for('static', filename='img/generic/csharpicon.png') }}">
+        <img src="{{ url_for('static', filename='img/generic/vistudioicon.png') }}">
+        <img src="{{ url_for('static', filename='img/generic/unityicon.png') }}">
+        <img src="{{ url_for('static', filename='img/generic/trelloicon.png') }}">
+        <img src="{{ url_for('static', filename='img/generic/bitbucketicon.png') }}">
+      </div>
+      <hr>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

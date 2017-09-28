@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sean McCann</title>
+
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/app.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/devpost.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">Sean McCann</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Professional Development <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="../barblitz">Bar Blitz</a></li>
+                <li><a href="../eishhappens">Eish Happens</li>
+                <li><a href="../mvar">Moneyversity AR</a></li>
+                <li><a href="../sidehustle"><strong>Side Hustle</strong></a></li>
+                <li><a href="../superanimals">Super Animals</a></li>
+                <li><a href="../swipa">Swipa</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Personal Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="../astudioclones">Android Studio Clones</a></li>
+                <li><a href="../session">Session</a></li>
+                <li><a href="../openweather">Openweather</a></li>
+                <li><a href="../stardetect">Stardetect</a></li>
+                <li><a href="../permissiongranter">Android Permissions Plugin for Unity</a></li>
+                <li><a href="../seanix">Seanix</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <h1 id="title">Side Hustle</h1>
+      <hr>
+      <p id="description"><a href="http://www.moneyversity.co.za/5/course/undefined/content/490">Side Hustle</a> is a web based game produced for Old Mutual and used within their LMS, Moneyversity.co.za </p>
+      <p id="description">The game allows the users to play as Tim, delivering pizza on his bike, avoiding obstacles, collecting coins, and learning the value of insurance </p>
+      <p id="description">Moneyversity - Financial Education Made Easy.</p>
+      <br>
+      <br>
+      <img id="sidesplash" src="{{ url_for('static', filename='img/sidehustle/splash.png') }}">
+      <img id="sidesplash" src="{{ url_for('static', filename='img/sidehustle/splash2.png') }}">
+      <hr>
+      <div class="techicons">
+        <img src="{{ url_for('static', filename='img/generic/javascripticon.png') }}">
+        <img src="{{ url_for('static', filename='img/generic/html5icon.png') }}">
+        <img src="{{ url_for('static', filename='img/generic/cssicon.png') }}">
+        <img src="{{ url_for('static', filename='img/generic/phpstormicon.png') }}">
+        <img src="{{ url_for('static', filename='img/generic/phasericon.jpg') }}">
+      </div>
+      <hr>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

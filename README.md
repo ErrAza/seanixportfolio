@@ -1,2 +1,3 @@
-# seanixportfolio
-Seanix site
+# portfolio
+
+Portfolio/Personal site

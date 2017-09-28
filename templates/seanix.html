@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sean McCann</title>
+
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/app.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/devpost.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">Sean McCann</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Professional Development <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="../barblitz">Bar Blitz</a></li>
+                <li><a href="../eishhappens">Eish Happens</a></li>
+                <li><a href="../mvar">Moneyversity AR</a></li>
+                <li><a href="../sidehustle">Side Hustle</a></li>
+                <li><a href="../superanimals">Super Animals</a></li>
+                <li><a href="../swipa">Swipa</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Personal Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="../astudioclones">Android Studio Clones</a></li>
+                <li><a href="../session">Session</a></li>
+                <li><a href="../openweather">Openweather</a></li>
+                <li><a href="../stardetect">Stardetect</a></li>
+                <li><a href="../permissiongranter">Android Permissions Plugin for Unity</a></li>
+                <li><a href="../seanix"><strong>Seanix</strong></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <h1 id="title">Seanix</h1>
+      <hr>
+      <p id="description">This site was developed as a means for me to log and supplement my skills and learning in an externally visible manner.</p>
+      <p id="description">Alongside the benefits of having an online portfolio, I am able to learn more into the Web Development space and tackle various tools used within the process, thus helping me in two different ways.</p>
+      <p id="description">The backend is written in Python and makes use of Flask and uWSGI, hosted off an Ubuntu VPS from Digital Ocean.</p>
+      <p id="description">The frontend is written in basic HTML5, CSS and Javascript, and piggybacks off Bootstrap and Sass.</p>
+      <p id="description">I initially wrote the backend in ExpressJS with NodeJS, and using PUG, but shortly after rewrote it so as to split the skills between Python and Javascript, as well as the site being extremely minimalistic in terms of the tools required.</p>
+      <p id="description">I will continue to use this place as a means to delve deeper into the world of Web Development, in the full stack manner.</p>
+      <p id="description">Main frameworks and libraries used include the following;</p>
+      <ul id="gameplaylist">
+        <li><a href="https://v4-alpha.getbootstrap.com/">Bootstrap</a></li>
+        <li><a href="http://flask.pocoo.org/docs/0.12/">Flask</a></li>
+        <li><a href="https://uwsgi-docs.readthedocs.io/en/latest/">uWSGI</a></li>
+        <li><a href="https://www.digitalocean.com/">Digital Ocean</a></li>
+      </ul>
+      <br>
+      <hr>
+      <div class="techicons">
+        <img src="{{ url_for('static', filename='img/generic/pythonicon.ico') }}">
+        <img src="{{ url_for('static', filename='img/generic/linuxicon.ico') }}">
+        <img src="{{ url_for('static', filename='img/generic/sublimeicon.png') }}">
+        <img src="{{ url_for('static', filename='img/generic/flaskicon.png') }}">
+        <img src="{{ url_for('static', filename='img/generic/bootstrapicon.png') }}">
+      </div>
+      <hr>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

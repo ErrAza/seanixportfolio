@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sean McCann</title>
+
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/app.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/devpost.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">Sean McCann</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Professional Development <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="../barblitz">Bar Blitz</a></li>
+                <li><a href="../eishhappens">Eish Happens</a></li>
+                <li><a href="../mvar">Moneyversity AR</a></li>
+                <li><a href="../sidehustle">Side Hustle</a></li>
+                <li><a href="../superanimals">Super Animals</a></li>
+                <li><a href="../swipa">Swipa</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Personal Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="../astudioclones">Android Studio Clones</a></li>
+                <li><a href="../session"><strong>Session</strong></a></li>
+                <li><a href="../openweather">Openweather</a></li>
+                <li><a href="../stardetect">Stardetect</a></li>
+                <li><a href="../permissiongranter">Android Permissions Plugin for Unity</a></li>
+                <li><a href="../seanix">Seanix</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <h1 id="title">Session</h1>
+      <hr>
+      <p id="description">Session is an Android application developed in Android Studio that I am working on when I find the time to do so.</p>
+      <p id="description">The main idea behind it, is that it will allow users to discover each other, and be paired based entirely on musical interests.</p>
+      <p id="description">The authorization procedure involves quick login by aid of the ParseDB on AWS. The user can then set up their profile, as well as explore a seemingly infinite directory of artists, courtesy of the LastFM API.</p>
+      <p id="description">Identifying types of users enables the idea that a user can take on the role of one seeking fellow musicians, so that the aim is not to be a space for matching people, but for a space to aid the formation and networking of local musicians. In doing so, the user can not only find friends with similar musical genre interests, but possibly be involved in the musical industry and help to cultivate it.</p>
+      <p id="description">The motivation behind the idea is one that resonates with me personally as I noticed there a severe lack of communication and networking in the local music scene, so if you are a musician of some type, it is extremely difficult to find likeminded people and assemble them to just in general, make more local music, with the added benefit of being able to find new artists/bands, and make a few friends along the way.</p>
+      <br>
+      <p id="description">Some noteworthy tech used include the following;</p>
+      <ul id="gameplaylist">
+        <li><a href="https://github.com/google/volley">Volley</a></li>
+        <li><a href="https://developer.android.com/studio/index.html">Android Studio</a></li>
+        <li><a href="http://parseplatform.org/">ParseDB</a></li>
+        <li><a href="https://aws.amazon.com/">Amazon Web Services</a></li>
+        <li><a href="https://www.last.fm/api">LastFM API</a></li>
+      </ul>
+      <br>
+      <p id="description"><a href="https://github.com/ErrAza/Session">Session</a></p>
+      <hr>
+      <div class="techicons">
+        <img src="{{ url_for('static', filename='img/generic/javaicon.png') }}">
+        <img src="{{ url_for('static', filename='img/generic/androidstudioicon.png') }}">
+        <img src="{{ url_for('static', filename='img/generic/androidicon.png') }}">
+        <img src="{{ url_for('static', filename='img/generic/linuxicon.ico') }}">
+        <img src="{{ url_for('static', filename='img/generic/lastfmicon.png') }}">
+      </div>
+      <hr>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

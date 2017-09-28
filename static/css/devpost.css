@@ -1,0 +1,53 @@
+.techicons img {
+ 	width: 50px;
+ 	margin-left: 12%;
+ }
+
+.techicons {
+	display: block;
+}
+
+ #title {
+ 	text-align: center;
+ 	font-style: 'bold';
+ }
+
+ #description {
+ 	text-align: center;
+ 	font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 25px;
+    margin: 0 0 10px;
+ }
+
+ #gameplaylist {
+ 	margin: auto;
+ 	display: table;
+ }
+
+ #video {
+ 	margin: auto;
+    display: block;
+ }
+
+ #splash {
+ 	margin: auto;
+ 	display: block;
+    margin: auto;
+    width: 70%;
+ }
+
+ #sidesplash {
+ 	margin: auto;
+    display: inline-block;
+    margin-left: 15%;
+    width: 30%;
+ }
+
+ hr {
+ 	border: 0;
+    border-top: 1px solid #ccc;
+    height: 3px;
+    padding: 0;
+    width: 100%;
+ }
