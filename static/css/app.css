@@ -25,3 +25,36 @@ hr {
   object-fit: cover;
 }
 
+#contactinfo {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+}
+
+.contacticons {
+  display: block;
+}
+
+.contacticons img {
+  width: 70px;
+  margin-left: 30%;
+}
+
+#custompadicon {
+  margin-left: 120px;
+}
+
+#aboutme {
+    position: absolute;
+    top: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#profilepic {
+    width: 25%;
+    margin: auto;
+    display: inherit;
+    padding-top: 10px;
+    border-radius: 50px;
+}
